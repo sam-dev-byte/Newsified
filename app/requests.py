@@ -14,7 +14,7 @@ def configure_request(app):
     cat_url=app.config['CAT_API_URL']
 
 
-def get_source():
+def get_source()
     '''
     Function that gets the json response to url request
     '''
