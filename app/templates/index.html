@@ -3,7 +3,8 @@
 {% block content %} 
   {% block styles %}
     {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> 
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   {% endblock %}
 <br>
 <br>
@@ -39,7 +40,7 @@
               {% for headlines in headlines %}
 
               <div class="card">
-                <img class="card" src="{{headlines.image}}" alt="Card image cap" size="100px180">
+                <img class="card" src="{{headlines.image}}" alt="Card image cap" height='400' width="645">
                 <div class="card-body">
                   <h5 class="card-title">{{headlines.author}}</h5>
                   <p class="card-text">{{headlines.description}}</p>
