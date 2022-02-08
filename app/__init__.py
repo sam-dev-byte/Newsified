@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 bootstrap = Bootstrap(app)
 
-def create_app(config_name):
+
 
 
     # Creating the app configurations
