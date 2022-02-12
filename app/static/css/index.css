@@ -1,6 +1,8 @@
 .main {
-    flex: 1 1 0;
+
+    flex: auto;
     display: flex;
+    background-attachment: fixed;
 }
 .container-fluid {
   display: flex;
@@ -8,4 +10,7 @@
 .col-9 {
   overflow-y: auto;
   height: 90vh; /* NEW */
+}
+.h1{
+  text-align: center;
 }

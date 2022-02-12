@@ -14,12 +14,8 @@
   <div class="main">
     <div class="container-fluid">
       <div class="row">
-
-        <div class="col-3">
+        <div class="col-md-6">
           <div class="card-column">
-            <div class="card-header">
-              <h4>Browse News Sources</h4>
-            </div>
             <div class="list-group list-group-flush scrolly">
               <ul>
                 {% for source in sources %}
@@ -29,16 +25,15 @@
                 {% endfor %}
               </ul>
             </div>
-
           </div>
         </div>
+          
+       
 
-        <div class="col-9">
-          <h1 align="center">THE HEADLINES </h3>
-          <div class="container">
+        <div class="col-6">
+          <h1>THE HEADLINES </h1>         
             <div class="card-columns">
               {% for headlines in headlines %}
-
               <div class="card">
                 <img class="card" src="{{headlines.image}}" alt="Card image cap" height='400' width="645">
                 <div class="card-body">
@@ -53,7 +48,7 @@
                 </div>
               </div>
               {% endfor %}
-            </div>
+            
           </div>
         </div>
 
